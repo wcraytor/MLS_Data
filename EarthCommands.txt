@@ -1,0 +1,11 @@
+
+ 
+> MyData = read.csv("d:\\data\\MyData.csv",header=TRUE)
+> x=data.frame(MyData[,1:(ncol(MyData)-1)])
+> y=MyData[,ncol(MyData)]
+> b=earth(x,y,nprune=12)
+> summary(b,digits=2,style="pmax")
+
+
+
+
